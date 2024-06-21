@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: petstor-app-deployment
+  name: petstore-app-deployment
+  namespace: petstore
 spec:
   replicas: 3
   selector:
