@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: petapp
+spec:
+  # Secret names are always required.
+  secretName: petapp
+  dnsNames:
+  - test.shubhamk.online
+  issuerRef:
+    name: production-app
+    kind: ClusterIssuer
